@@ -17,7 +17,8 @@ const movieSchema = new mongoose.Schema({
     numberInStock: {
         type: Number,
         min: 0,
-        max: 255
+        max: 255,
+        required: true
     },
     dailyRentalRate: {
         type: Number,
