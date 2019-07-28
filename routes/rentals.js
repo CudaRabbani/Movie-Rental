@@ -37,7 +37,7 @@ router.post('/', async (req, res) => {
         await rental.save();
         return res.status(200).send(rental);*/
 
-        new Fawn.Task()
+        await new Fawn.Task()
             .save('rentals', rental)
             .update('movies', {_id: tempMovie._id}, {
                 $inc: {numberInStock: -1}
@@ -50,6 +50,7 @@ router.post('/', async (req, res) => {
     }
 
 });
+
 router.put('/:id', async (req, res) => {
     let tempRental = _.pick(req.body, ['customerID', 'movieID', 'dateOut', 'returnDate', 'rentalFee']);
     try {
@@ -60,6 +61,7 @@ router.put('/:id', async (req, res) => {
         return res.status(400).send(err.message);
     }
 });
+
 router.get('/', async (req, res) => {
     try {
         const rentals = await Rental.find().sort({dateOut: -1});
