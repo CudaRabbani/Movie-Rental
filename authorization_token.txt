@@ -1,5 +1,8 @@
 1. import package jsonwebtoken
 2. After sucesfull login generate token using any payload from user data.
+    i.e:
+    const token = jwt.sign({_id: user._id}, config.get('jwtPrivateKey'));
+    here jwtProvateKey should be coming from the environment variable
 3. Install config package.
 4. create config folder.
     4.1 create default.json file
