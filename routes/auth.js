@@ -24,7 +24,7 @@ router.post('/', async (req, res) => {
         }
 
         //const token = jwt.sign({_id: user._id}, 'jwtprivatekey'); //jwtprivatekey should be define in the envioronment variable
-        const token = jwt.sign({_id: user._id}, config.get('jwtPrivateKey'));
+        //const token = jwt.sign({_id: user._id}, config.get('jwtPrivateKey'));
         res.send(token);
 
     }
