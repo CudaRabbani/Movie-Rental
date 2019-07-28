@@ -1,0 +1,27 @@
+1. import package jsonwebtoken
+2. After sucesfull login generate token using any payload from user data.
+3. Install config package.
+4. create config folder.
+    4.1 create default.json file
+    4.2 define variables but initialize them with empty values:
+        i.e:
+         {
+            "jwtPrivateKey": ""
+         }
+    4.3 create custom-environment-variables.json (make sure the name is same)
+        copy whtever was there inside default.json and start modifying it:
+        i.e
+        {
+            "jwtPrivateKey": "vidly_jwtPrivateKey"
+        }
+    here vidly_jwtPrivateKey variable needs to be set in environment variable
+5. Define the "vidly_jwtPrivateKey" variable in the env:
+    ->mac/linux: export vidly_jwtPrivateKey=mySecretKey
+    ->windows: set vidly_jwtPrivateKey=mySecretKey
+6. make sure to import config package inside the index.js
+7. add some logic to make sure if the environment variable is not set, so that it exits the app.
+    i.e:
+    if (!config.get('jwtPrivateKey')) {
+        console.log('FATAL ERROR: jwtPrivateKey is not defined.');
+        process.exit(1);
+    }
