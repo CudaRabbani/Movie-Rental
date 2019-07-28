@@ -47,7 +47,9 @@ router.post('/', async (req, res) => {
 
     try {
         const movie = new Movie({
-            'title': req.body.name,
+            'title': req.body.title,
+            'numberInStock': req.body.numberInStock,
+            'dailyRentalRate': req.body.dailyRentalRate,
             'genre': genre
         });
         await movie.save();
