@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
+const jwt = require('jsonwebtoken');
 const {User} = require('../model/user');
 
 router.post('/', async (req, res) => {
@@ -20,7 +21,9 @@ router.post('/', async (req, res) => {
         if (!validPass) {
             return res.status(400).send('Invalid email or password!!!');
         }
-        res.send('Sucesfull login');
+
+        const token = jwt.sign({_id: user._id}, 'jwtprivatekey'); //jwtprivatekey should be define in the envioronment variable
+        res.send(token);
 
     }
     catch(err) {
