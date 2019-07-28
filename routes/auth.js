@@ -5,6 +5,7 @@ const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
 const jwt = require('jsonwebtoken');
+const config = require('config');
 const {User} = require('../model/user');
 
 router.post('/', async (req, res) => {
@@ -22,7 +23,8 @@ router.post('/', async (req, res) => {
             return res.status(400).send('Invalid email or password!!!');
         }
 
-        const token = jwt.sign({_id: user._id}, 'jwtprivatekey'); //jwtprivatekey should be define in the envioronment variable
+        //const token = jwt.sign({_id: user._id}, 'jwtprivatekey'); //jwtprivatekey should be define in the envioronment variable
+        const token = jwt.sign({_id: user._id}, config.get('jwtPrivateKey'));
         res.send(token);
 
     }
