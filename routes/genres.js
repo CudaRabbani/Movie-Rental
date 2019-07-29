@@ -1,6 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const router = express.Router();
+
+const auth = require('../middleware/auth');
 const {Genre, genreSchema} = require('../model/genre');
 
 router.get('/', async (req, res) => {
@@ -17,7 +19,7 @@ router.get('/:id', async (req, res) => {
     res.send(genres);
 });
 
-router.post('/', async (req, res) => {
+router.post('/', auth, async (req, res) => {
     const genre = new Genre ({
         name: req.body.name
     });
