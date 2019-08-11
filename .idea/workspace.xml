@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6790787a-3b6e-4360-a8ba-5104237811e6" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -9,6 +10,18 @@
       <change beforePath="$PROJECT_DIR$/node_modules/lodash/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/movies.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/rentals.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/rentals.js" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/middleware/async.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/finalhandler/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/finalhandler/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/debug/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/send/node_modules/debug/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/genres.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/genres.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/test_react" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -53,6 +66,11 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="movie_rental" type="NodeJSConfigurationType" path-to-js-file="index.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -65,6 +83,24 @@
       <updated>1564201112726</updated>
       <workItem from="1564201113768" duration="36415000" />
       <workItem from="1564301014398" duration="1873000" />
+<<<<<<< Updated upstream
+=======
+      <workItem from="1564342797420" duration="18108000" />
+      <workItem from="1564426133422" duration="4245000" />
+      <workItem from="1564559135031" duration="663000" />
+      <workItem from="1564559818774" duration="599000" />
+      <workItem from="1564729496329" duration="663000" />
+      <workItem from="1564909242546" duration="2484000" />
+      <workItem from="1565016763527" duration="13541000" />
+      <workItem from="1565117137431" duration="2135000" />
+      <workItem from="1565203763300" duration="283000" />
+      <workItem from="1565240067958" duration="1953000" />
+      <workItem from="1565294928312" duration="603000" />
+      <workItem from="1565342962514" duration="1216000" />
+      <workItem from="1565376217778" duration="599000" />
+      <workItem from="1565385468311" duration="599000" />
+      <workItem from="1565468476384" duration="5904000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>

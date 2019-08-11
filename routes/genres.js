@@ -1,12 +1,27 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const router = express.Router();
+const asyncMiddleware = require('../middleware/async');
+
+const auth = require('../middleware/auth');
 const {Genre, genreSchema} = require('../model/genre');
 
-router.get('/', async (req, res) => {
-    const genres = await Genre.find().select('name');
+
+
+//as we are using error middleware
+router.get('/', asyncMiddleware(async (req, res) => {
+    const genres = await Genre.find().sort('name');
     res.send(genres);
-});
+
+    /*    try {
+            const genres = await Genre.find().select('name');
+            res.send(genres);
+        }
+        catch (err) {
+            next(err);
+        }*/
+
+}));
 
 router.get('/:id', async (req, res) => {
     const genres = await Genre.findById(req.params.id);
